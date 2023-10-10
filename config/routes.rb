@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root to: "boards#index"
   # get("/", { :controller => "boards", :action => "index" })
 
@@ -41,6 +42,7 @@ Rails.application.routes.draw do
   #------------------------------
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  # /rails/info/routes
 
   # Defines the root path route ("/")
   # root "articles#index"
